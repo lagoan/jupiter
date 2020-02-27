@@ -37,6 +37,7 @@ gem 'rsolr'
 
 # Authentication
 gem 'omniauth'
+gem 'omniauth-identity'
 gem 'omniauth-rails_csrf_protection' # Remove after https://github.com/omniauth/omniauth/pull/809 will be resolved
 gem 'omniauth-saml'
 # Authorization

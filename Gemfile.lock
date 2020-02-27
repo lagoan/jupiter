@@ -100,6 +100,9 @@ GEM
     ast (2.4.0)
     autoprefixer-rails (9.7.3)
       execjs
+    bcrypt (3.1.13)
+    bcrypt-ruby (3.1.5)
+      bcrypt (>= 3.1.3)
     better_errors (2.5.1)
       coderay (>= 1.0.0)
       erubi (>= 1.0.0)
@@ -262,6 +265,9 @@ GEM
     omniauth (1.9.0)
       hashie (>= 3.4.6, < 3.7.0)
       rack (>= 1.6.2, < 3)
+    omniauth-identity (1.1.1)
+      bcrypt-ruby (~> 3.0)
+      omniauth (~> 1.0)
     omniauth-rails_csrf_protection (0.1.2)
       actionpack (>= 4.2)
       omniauth (>= 1.3.1)
@@ -530,6 +536,7 @@ DEPENDENCIES
   nokogiri
   oaisys!
   omniauth
+  omniauth-identity
   omniauth-rails_csrf_protection
   omniauth-saml
   paper_trail

@@ -14,6 +14,9 @@ Rails.application.config.middleware.use OmniAuth::Builder do
              name: ['urn:oid:2.16.840.1.113730.3.1.241'] # displayName
            }
 
+  provider :identity,
+           fields: [:uid, :user_id, :provider]
+
   provider :developer if Rails.env.development? || Rails.env.uat?
 
   # By default in development mode, omniauth raises an exception when authentication fails
